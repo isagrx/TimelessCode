@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showcase</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .headeri {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .headeri p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+            color: black;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin: 30px;
+            margin-bottom: 30px;
+            padding: 14px 40px;
+            transition-duration: 0.4s;
+        }
+        .button89{
+            background-color: bisque;
+            background-color: #FCFCFD;
+            border-radius: 5px;
+            border-width: 5px;
+        }
+        .button-cls {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 120px;
+            height: 70px;
+            background-color: black;
+            color: white;
+            border-color: bisque;
+            border-radius: 20px;
+        }
+        .button-cls img{
+            height: 30px;
+            width: 30px;
+        }
+        .button-cls:hover {
+        background-color:bisque;
+        transition: 1.5s;
+        }
+        .button-pgn{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 120px;
+            height: 70px;
+            background-color: black;
+            border-color: bisque;
+            border-radius: 20px;
+        }
+        .button-pgn img{
+            width: 120%;
+            height: 120%;
+        }
+
+        .Ferrari {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .Ferrari img {
+            max-height: 70%;
+            max-width: 70%;
+            border-radius: 10px;
+        }
+
+        .Ferrari p {
+            max-width: 50%;
+            text-align: left;
+            color: white;
+        }
+        .CLS img{
+            max-width: 60%;
+            max-height: 60%;
+
+        }
+        .CLS {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+        .CLS p{
+            color: white;
+        }
+        .GTS {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .GTS img{
+            max-width: 35.5%;
+            max height: 35.5%;
+        }
+        .GTS p{
+            color: white;
+            margin: 10px;
+        }
+        .Pagani {
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: space-between;
+	    align-items: center;
+	    align-content: space-evenly;
+        }
+        .Pagani img{
+            max-width: 32%;
+            max-height: 32%;
+        }
+        .Pagani p{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="headeri">
+        
+        <p style="color: white;">
+            Welcome to the automotive extravaganza where innovation meets elegance, and horsepower harmonizes with cutting-edge design – <br><strong>the Car Enthusiast's Paradise!</strong><br>
+            <br>
+            Step into a world where every gleaming chassis and roaring engine tells a story of automotive excellence. Our car showcase is not just an exhibition; it's a journey through the evolution of speed, style, and sophistication.
+        </p>
+
+    </div>
+
+    <div class="buttons">
+    <form method="get" action="#cls">
+        <button class="button-cls" role="button"><img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\favicon-32x32_1.png" alt="mb"> CLS  </button>
+    </form>
+
+    <form method="get" action="#gts">
+        <button class="button-cls" role="button"><img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\favicon-32x32_1.png"> GT S</button>
+    </form>
+
+    <form method="get" action="#pagani">
+        <button class="button-pgn" role="button"><img src="C:\Users\xbwro\Downloads\Pagani-logo-1992-1440x900.webp"></button>
+    </form>
+
+    </div>
+
+    <div class="Ferrari" id="rari">
+        
+
+        <img src="Foto e projektit/Artboard 1.png" alt="Automotive Engineering">
+        <p>
+            Ferrari, a pinnacle of automotive engineering, is renowned for its relentless pursuit of speed and performance. With a legacy deeply rooted in Formula 1 racing, Ferrari's engines are precision-crafted marvels, delivering a symphony of power and efficiency. The incorporation of cutting-edge materials, aerodynamics, and innovative design techniques places Ferrari at the forefront of technological advancements in the automotive industry. Each Ferrari engine is a testament to the brand's commitment to pushing the boundaries of what's possible, embodying a perfect fusion of art and engineering mastery.
+        </p>
+
+    </div>
+
+    <div class="CLS" id="cls">
+        <p>
+        The CLS 63, a marvel of automotive engineering, seamlessly blends power and elegance. Its sleek, aerodynamic design captivates with a commanding presence, while under the hood, a handcrafted AMG V8 engine roars to life, pushing the boundaries of performance. With its distinctive diamond grille and muscular lines, the CLS 63 redefines luxury, setting a new standard for sporty sophistication. This masterpiece not only turns heads but also revolutionizes the industry, showcasing how meticulous engineering and avant-garde design can harmoniously coexist, forever altering the landscape of high-performance automobiles.
+    </p>
+    <img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\cls 63.png" alt="Mercedes Benz CLS63 AMG">
+    </div>
+
+    <div class="GTS" id="gts">
+        <p>In the grand tapestry of automotive brilliance, the 2016 Mercedes-AMG GT S emerges as a paradigm of ingenuity, effortlessly converging power, precision, and a heightened sense of sophistication. At its beating heart resides a meticulously handcrafted 4.0-liter V8 biturbo engine, an artistic testament to the engineering prowess emanating from the hallowed halls of Mercedes-AMG. With an extraordinary output of 503 horsepower and 479 lb-ft of torque, the GT S catapults itself into the echelons of high-performance sports cars, orchestrating a breathtaking ballet from 0 to 60 mph in a mere 3.7 seconds. Beyond its dynamic power, the exterior of the GT S is a captivating canvas, adorned with the iconic Panamericana grille, purposeful rear spoiler, and sleek, sculpted body lines, each element meticulously designed to evoke a harmonious symphony of speed and elegance on the open road.</p>
+        <img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\s-l1200.webp" alt="GT S 2016">
+        <P>Step into the cocoon of automotive luxury that is the GT S, and you embark on a sensory journey where opulence intertwines seamlessly with cutting-edge technology. The AMG performance seats, meticulously crafted for the connoisseur of speed, offer not just physical comfort but a symbiotic connection between driver and machine. Within this orchestration of elegance and innovation, the AMG Dynamic Select drive modes unfold a personalized driving experience, adapting the GT S to the ever-shifting dynamics of the road and the nuanced preferences of its master. The interior, adorned with high-quality materials, bespoke finishes, and an intuitive layout, serves as a testament to the meticulous artistry embedded in every facet of the GT S experience. As a symbol of Mercedes-AMG's unwavering commitment to pushing the boundaries of automotive excellence, the 2016 GT S transcends the realms of mere transportation, becoming a transformative conduit between the driver's aspirations and the raw exhilaration of the open road. It's not merely a vehicle; it's an embodiment of relentless innovation and a celebration of the symbiotic relationship between driver and high-performance machine.</P>
+    </div>
+
+    <div class="Pagani" id="pagani">
+        <img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\Pagani.png" alt="Pagani Huayra">
+        <p>
+            The Pagani Huayra, a mesmerizing masterpiece in the realm of hypercars, is a testament to automotive artistry and engineering brilliance. Born from the visionary mind of Horacio Pagani, this Italian marvel is powered by a handcrafted AMG-sourced 6.0-liter twin-turbocharged V12 engine, a testament to its collaboration with Mercedes-AMG. This powerplant produces a staggering 730 horsepower and 738 lb-ft of torque, propelling the Huayra to speeds that redefine the limits of exhilaration. The seamless integration of a seven-speed automated manual transmission ensures lightning-fast gear changes, contributing to the Huayra's reputation as a technological marvel on wheels.
+
+            What sets the Pagani Huayra apart is not only its exceptional performance but also the meticulous craftsmanship that goes into its creation. The car's carbon-titanium monocoque chassis, designed in collaboration with Mercedes-AMG, ensures unparalleled strength and lightness, contributing to its agility and speed. The attention to detail is further exemplified by the intricate interior, where luxury meets innovation. The Huayra's cabin features premium materials, bespoke finishes, and a central touchscreen control panel, creating an ambiance that reflects the exclusivity of this automotive gem.
+            
+            Beyond its raw power and technological sophistication, the Pagani Huayra is a true work of art. Each Huayra is a unique expression of its owner's tastes, with the Pagani Atelier offering an array of customization options. From the sculpted aerodynamic elements to the mesmerizing gull-wing doors, the Huayra's exterior is a symphony of form and function. Pagani's commitment to pushing the boundaries of design and engineering has resulted in a car that not only captivates the senses on the road but also stands as a sculpted testament to the limitless possibilities of automotive innovation. The Pagani Huayra is, without a doubt, a rare fusion of power, precision, and artistic expression that defines the pinnacle of automotive excellence.
+        </p>
+    </div>
+</body>
+</html>
