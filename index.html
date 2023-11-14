@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Showcase</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body {
             background-color: black;
         }
@@ -113,13 +116,14 @@
             align-items: center;
             padding-left: 5px;
             padding-right: 5px;
+            background-color: white;
         }
         .GTS img{
             max-width: 35.5%;
             max height: 35.5%;
         }
         .GTS p{
-            color: white;
+            color: black;
             margin: 10px;
         }
         .Pagani {
@@ -138,6 +142,44 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: white;
         }
+        .GT631 {
+            display: grid;
+            height: 100%;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .titlegt63 {
+            display: inline-block;
+            position: absolute;
+            color: white;
+            padding-left: 40px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 50px;
+        }
+        .textgt63 {
+            display: flex;
+            position: absolute;
+            color: white;
+            text-align: left;
+            margin-top: 120px;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+	        align-content: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .gtja {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+        .Track {
+            display: grid;
+            height: 100%; 
+        }
+
     </style>
 </head>
 <body>
@@ -153,15 +195,15 @@
 
     <div class="buttons">
     <form method="get" action="#cls">
-        <button class="button-cls" role="button"><img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\favicon-32x32_1.png" alt="mb"> CLS  </button>
+        <button class="button-cls" role="button"><img src="Foto e projektit\favicon-32x32_1.png" alt="mb"> CLS  </button>
     </form>
 
     <form method="get" action="#gts">
-        <button class="button-cls" role="button"><img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\favicon-32x32_1.png"> GT S</button>
+        <button class="button-cls" role="button"><img src="Foto e projektit\favicon-32x32_1.png"> GT S</button>
     </form>
 
-    <form method="get" action="#pagani">
-        <button class="button-pgn" role="button"><img src="C:\Users\xbwro\Downloads\Pagani-logo-1992-1440x900.webp"></button>
+    <form method="get" action="#GT631">
+        <button class="button-cls" role="button"><img src="Foto e projektit\favicon-32x32_1.png"> GT 63S </button>
     </form>
 
     </div>
@@ -180,7 +222,7 @@
         <p>
         The CLS 63, a marvel of automotive engineering, seamlessly blends power and elegance. Its sleek, aerodynamic design captivates with a commanding presence, while under the hood, a handcrafted AMG V8 engine roars to life, pushing the boundaries of performance. With its distinctive diamond grille and muscular lines, the CLS 63 redefines luxury, setting a new standard for sporty sophistication. This masterpiece not only turns heads but also revolutionizes the industry, showcasing how meticulous engineering and avant-garde design can harmoniously coexist, forever altering the landscape of high-performance automobiles.
     </p>
-    <img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\cls 63.png" alt="Mercedes Benz CLS63 AMG">
+    <img src="Foto e projektit\cls 63.png" alt="Mercedes Benz CLS63 AMG">
     </div>
 
     <div class="GTS" id="gts">
@@ -189,15 +231,14 @@
         <P>Step into the cocoon of automotive luxury that is the GT S, and you embark on a sensory journey where opulence intertwines seamlessly with cutting-edge technology. The AMG performance seats, meticulously crafted for the connoisseur of speed, offer not just physical comfort but a symbiotic connection between driver and machine. Within this orchestration of elegance and innovation, the AMG Dynamic Select drive modes unfold a personalized driving experience, adapting the GT S to the ever-shifting dynamics of the road and the nuanced preferences of its master. The interior, adorned with high-quality materials, bespoke finishes, and an intuitive layout, serves as a testament to the meticulous artistry embedded in every facet of the GT S experience. As a symbol of Mercedes-AMG's unwavering commitment to pushing the boundaries of automotive excellence, the 2016 GT S transcends the realms of mere transportation, becoming a transformative conduit between the driver's aspirations and the raw exhilaration of the open road. It's not merely a vehicle; it's an embodiment of relentless innovation and a celebration of the symbiotic relationship between driver and high-performance machine.</P>
     </div>
 
-    <div class="Pagani" id="pagani">
-        <img src="C:\Users\xbwro\Documents\GitHub\TimelessCode\Foto e projektit\Pagani.png" alt="Pagani Huayra">
-        <p>
-            The Pagani Huayra, a mesmerizing masterpiece in the realm of hypercars, is a testament to automotive artistry and engineering brilliance. Born from the visionary mind of Horacio Pagani, this Italian marvel is powered by a handcrafted AMG-sourced 6.0-liter twin-turbocharged V12 engine, a testament to its collaboration with Mercedes-AMG. This powerplant produces a staggering 730 horsepower and 738 lb-ft of torque, propelling the Huayra to speeds that redefine the limits of exhilaration. The seamless integration of a seven-speed automated manual transmission ensures lightning-fast gear changes, contributing to the Huayra's reputation as a technological marvel on wheels.
-
-            What sets the Pagani Huayra apart is not only its exceptional performance but also the meticulous craftsmanship that goes into its creation. The car's carbon-titanium monocoque chassis, designed in collaboration with Mercedes-AMG, ensures unparalleled strength and lightness, contributing to its agility and speed. The attention to detail is further exemplified by the intricate interior, where luxury meets innovation. The Huayra's cabin features premium materials, bespoke finishes, and a central touchscreen control panel, creating an ambiance that reflects the exclusivity of this automotive gem.
-            
-            Beyond its raw power and technological sophistication, the Pagani Huayra is a true work of art. Each Huayra is a unique expression of its owner's tastes, with the Pagani Atelier offering an array of customization options. From the sculpted aerodynamic elements to the mesmerizing gull-wing doors, the Huayra's exterior is a symphony of form and function. Pagani's commitment to pushing the boundaries of design and engineering has resulted in a car that not only captivates the senses on the road but also stands as a sculpted testament to the limitless possibilities of automotive innovation. The Pagani Huayra is, without a doubt, a rare fusion of power, precision, and artistic expression that defines the pinnacle of automotive excellence.
-        </p>
+    <div class="GT631">
+        <img class="gtja" img src="Foto e projektit/GT63S.png">
+        <div class="titlegt63"><p><font size="12" face="sans-serif" color="grey">Introducing the GT 63-S</font></p></div>
+        <div class="textgt63"><p>GT63S Street Performance:
+            The Mercedes-AMG GT63 S stands as a brilliant manifestation of automotive<br> engineering, seamlessly blending luxurious comfort with unparalleled performance. Beneath its sleek exterior<br> lies the heart of a powerhouse, a handcrafted 4.0-liter V8 biturbo engine that unleashes an astonishing <br>630 horsepower and 664 lb-ft of torque. This high-performance sedan doesn't just accelerate; it catapults,<br> reaching 60 mph in a mere 3.1 seconds. The adaptive air suspension and 4MATIC+ all-wheel-drive system <br>ensure a smooth and agile ride on the streets, making every turn an exhilarating experience.<br> Whether cruising through cityscapes or dominating the highways, the GT63 S redefines the notion of<br> a four-door luxury sedan with a thrilling blend of power, precision, and poise.</p></div>
+    </div>
+    <div class="Track">
+        <img class="gtja" img src="Foto e projektit/GT63 TRACK.png">
     </div>
 </body>
 </html>
