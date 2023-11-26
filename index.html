@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Showcase</title>
+    <title>Weistec Engineering</title>
     <style>
         html{
             scroll-behavior: smooth;
@@ -11,21 +11,48 @@
         body {
             background-color: black;
         }
-        .headeri {
-            padding: 20px;
-            background-color: black;
-            color: white;
-            border-radius: 10px;
-            border: 2px solid;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+        .hdr button {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Your Cool Font', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 30px;
+}
 
-        .headeri p {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: medium;
+.hdr button:hover {
+    background-color: #f0f0f0;
+}
+        .headeri {
+            background-color: white;
             color: black;
+            border: white;
+            border-style: solid;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            text-align: baseline;
+            display: flex;
+	        flex-direction: row;
+	        flex-wrap: nowrap;
+	        justify-content: space-between;
+	        align-items: center;
+            width: 100%;
         }
+        .headeri img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .headeri h1 {
+            color: white;
+            font-family: 'Your Cool Font', sans-serif;
+            text-shadow: 0px -1px 70px rgba(0, 0, 0, 0.9), 0px 1px 10px rgba(0, 0, 0, 0.9), 0px 1px 10px rgba(0, 0, 0, 0.9),0px -1px 70px rgba(0, 0, 0, 0.9);
+}
         .buttons {
             display: flex;
             justify-content: center;
@@ -120,7 +147,7 @@
         }
         .GTS img{
             max-width: 35.5%;
-            max height: 35.5%;
+            max-height: 35.5%;
         }
         .GTS p{
             color: black;
@@ -180,10 +207,13 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size:larger;
-            font-family:fantasy;
             font-display:inherit;
             width: fit-content;
             height: fit-content;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
         }
         .logbtn {
             display: flex;
@@ -209,13 +239,15 @@
 </head>
 <body>
     <div class="headeri">
-        
-        <p style="color: white;">
-            Welcome to the automotive extravaganza where innovation meets elegance, and horsepower harmonizes with cutting-edge design – <br><strong>the Car Enthusiast's Paradise!</strong><br>
-            <br>
-            Step into a world where every gleaming chassis and roaring engine tells a story of automotive excellence. Our car showcase is not just an exhibition; it's a journey through the evolution of speed, style, and sophistication.
-        </p>
-
+        <img src="Foto e projektit/logo.png">
+        <h1>Weistec Engineering</h1>
+        <div class="hdr"><form action="aboutus.html">  
+            <button type="submit">About US!</button>
+        </form>
+        <form action="log-in.html">  
+            <button type="submit">Join here</button>
+        </form>
+        </div>
     </div>
 
     <div class="buttons">
@@ -265,10 +297,10 @@
     <div class="logger">
         <div class="fotolog">
             <img class="cullinan" img src="Foto e projektit/log in page.png" alt="Register to see more!">
-        <p class="h22" style="color: white;">If you like our work. You should also join our newsletter where we post everyday!</p>
+        <p class="h22" style="color: white;">Discover the essence of automotive excellence. Dive into our story at the 'About Us' page.</p>
         <div class="buttons">
-        <form action="log-in.html">  
-            <button class="logbtn" type="submit">Log-IN</button>    
+        <form action="aboutus.html">  
+            <button class="logbtn" type="submit">About US!</button>    
         </form>
     </div>
     </div>
