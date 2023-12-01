@@ -4,6 +4,16 @@
 <head>
     <title>Log IN</title>
     <style>
+        .font{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            
+        }
+        .font:hover{
+            transition: 0.7s; 
+            font-size: 120%;   
+            background-color: black;    
+}
         body {
             display: flex;
             margin: 0;
@@ -20,7 +30,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px; /* Added padding for spacing */
+            padding: 0 20px;
         }
 
         .hdr {
@@ -125,9 +135,9 @@
 <body>
 
     <header>
-        <a href="index.html">Home Page!</a>
+        <button class="font"><a href="index.html" class="font">Home Page!</a></button>
         <img class="hdr" src="Foto e projektit/wlogo.png" alt="logo">
-        <a href="aboutus.html">About Us</a>
+        <button class="font"><a href="aboutus.html" class="font">About Us</a></button>
     </header>
 
     <div class="trupi">
@@ -146,8 +156,8 @@
         <div class="login">
             <form>
                 <label for="chk" aria-hidden="true">Log in</label>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="pswd" placeholder="password" required>
+                <input type="email" name="emaill" placeholder="Email" required>
+                <input type="password" name="pswdd" placeholder="password" required>
                 <button>Log IN</button>
             </form>
         </div>
