@@ -20,8 +20,23 @@
         header {
             background-color: white;
             width: 100%;
-            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0 20px;
+            
         }
+        .font{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            justify-content: space-evenly;
+            
+        }
+        .font:hover{
+            transition: 0.7s; 
+            font-size: 120%;   
+            background-color: black;    
+}
 
         .header img {
             max-width: 150px;
@@ -63,7 +78,10 @@
 <body>
     <header>
         <div class="header">
+            <button class="font"><a href="index.html" class="font">Home Page!</a></button>
             <a href="index.html"><img src="Foto e projektit/logo.png" alt="Weistec Engineering"></a>
+            <button class="font"><a href="aboutus.html" class="font">About Us</a></button>
+    </header>
         </div>
     </header>
     <div class="trupi">
