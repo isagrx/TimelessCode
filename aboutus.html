@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us!</title>
     <style>
         body {
-            background-color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-image: url("Foto e projektit/trinity.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Foto e projektit/trinity.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
 
         header {
             background-color: white;
             width: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
-            flex-direction: row;
+            padding: 20px;
+        }
+
+        .font {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
             
         }
-        .font{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: white;
-            justify-content: space-evenly;
-            transition: 0.7s; 
-            font-size: 120%;   
-            
+
+        .foto{
+            width: 150px;
+            height: 150px;
         }
+        
         button {
-            width: 60%;
+            width: 40%;
             height: 40px;
-            margin: 10px auto;
             justify-content: center;
-            display: block;
             color: beige;
-            background: black;
+            background: white;
             font-size: 1em;
             font-weight: bold;
-            margin-top: 20px;
             outline: none;
             border: none;
             border-radius: 5px;
             transition: .2s ease-in;
             cursor: pointer;
         }
-        .font:hover{
-            transition: 0.7s; 
-            font-size: 120%;   
-            background-color: black;    
-}
+
+        .font:hover {
+            transition: 0.7s;
+            font-size: 120%;
+        }
 
         .header img {
-            max-width: 150px;
-            max-height: 150px;
+            width: 150px;
+            height: 150px;
         }
+
         .trupi {
             display: flex;
-	        flex-direction: column;
-	        flex-wrap: wrap-reverse;
-	        justify-content: center;
-	        align-items: center;
-	        align-content: stretch;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin: 100px;
             font-size: medium;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -76,6 +77,7 @@
             text-shadow: 2px 2px 5px grey;
             text-align: left;
         }
+
         .trupi p {
             font-size: medium;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -83,26 +85,54 @@
             text-shadow: 2px 2px 5px grey;
             text-align: left;
         }
-        .trupi ol{
+
+        .trupi ol {
             color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-shadow: 2px 2px 5px grey;
             text-align: left;
         }
+
         footer {
-            background-color: white;
-            width: 100%;
-        }
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+footer p {
+    margin: 5px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
     </style>
 </head>
+
 <body>
     <header>
-        <div class="header">
-            <button class="font"><a href="index.html" class="font">Home Page!</a></button>
-            <a href="index.html"><img src="Foto e projektit/logo.png" alt="Weistec Engineering"></a>
-            <button class="font"><a href="aboutus.html" class="font">About Us</a></button>
-    </header>
-        </div>
+        <button class="font"><a href="index.html" class="font">Home Page!</a></button>
+        <a href="index.html"><img src="Foto e projektit/logo.png" alt="Weistec Engineering" class="foto"></a>
+        <button class="font"><a href="aboutus.html" class="font">About Us</a></button>
     </header>
     <div class="trupi">
         <p>At Weistec Engineering, we believe that every automotive enthusiast deserves a platform that not only showcases exceptional vehicles but also fosters a community bound by a shared passion for automotive excellence. Established with the vision to redefine the way we experience and appreciate automobiles, Weistec Engineering is not just an autoshowcasing site; it's a dynamic space where innovation, design, and community converge.<br><br><br>
@@ -117,26 +147,32 @@
             Our mission is simple – to provide a platform where automotive enthusiasts of all kinds can come together to explore, engage, and be inspired. We aim to be more than just a website; we aspire to be a hub for knowledge, discussion, and celebration of all things automotive.
             <br><br><br>
             Why Choose Weistec Engineering:
-            
+
             <li>
-            <ol>Curated Excellence: Our collection features a carefully curated selection of vehicles that represent the pinnacle of automotive design and engineering.</ol>
-            
-            <ol>Community Connection: Join a vibrant community of automotive enthusiasts. Share your passion, insights, and experiences with like-minded individuals from around the world.</ol>
-            
-            <ol>Personalized Experience: Create your automotive profile, build wishlists, and receive tailored recommendations based on your preferences. Weistec Engineering is designed to be as unique as your automotive taste.</ol>
-            
-            <ol>Industry Insights: Stay ahead of the curve with insider updates on the latest industry trends, technological advancements, and exclusive releases.</ol>
-            
-            <ol>Event Engagements: Receive invitations to exclusive automotive events, showcases, and experiences. Immerse yourself in the world of high-performance automobiles.</ol>
+                <ol>Curated Excellence: Our collection features a carefully curated selection of vehicles that represent the pinnacle of automotive design and engineering.</ol>
+
+                <ol>Community Connection: Join a vibrant community of automotive enthusiasts. Share your passion, insights, and experiences with like-minded individuals from around the world.</ol>
+
+                <ol>Personalized Experience: Create your automotive profile, build wishlists, and receive tailored recommendations based on your preferences. Weistec Engineering is designed to be as unique as your automotive taste.</ol>
+
+                <ol>Industry Insights: Stay ahead of the curve with insider updates on the latest industry trends, technological advancements, and exclusive releases.</ol>
+
+                <ol>Event Engagements: Receive invitations to exclusive automotive events, showcases, and experiences. Immerse yourself in the world of high-performance automobiles.</ol>
             </li>
-            
+
             Join us at Weistec Engineering and embark on a journey where every click, scroll, and interaction brings you closer to the heart of automotive innovation. Whether you're a seasoned enthusiast or just beginning your automotive adventure, Weistec Engineering is here to elevate your autoshowcasing experience. Welcome to a world where the road is not just a path; it's a symphony of power, elegance, and unrivaled engineering.</p>
     </div>
-    <div class="Log in button">
-
-    </div>
+    <footer>
+        <div>
+            <div>
+                <a href="index.html">Home</a><br>
+                <a href="car-review.html">German Trinity</a><br>
+                <a href="log-in.html">Log In</a>
+            </div>
+            <p>Thank you for visiting</p>
+            <p>&copy; 2023 Weistec Engineering. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-<footer>
 
-</footer>
 </html>

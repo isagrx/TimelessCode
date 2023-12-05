@@ -54,41 +54,63 @@
             text-align: center;
             margin-top: 20px;
         }
-        .m5{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: rgb(172,188,218);
-            background: linear-gradient(0deg, rgba(172,188,218,1) 0%);
-        }
-        .m5 h2{
-            text-align: center;
-            padding-bottom: 30px;
-        }
-        .m5 h3{
-            text-align: center;
-            padding: 30px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .m5scrll{
-            background-color: #333;
-            overflow: auto;
-            white-space: nowrap;
-            padding: 10px;
-            height: auto;
-            max-width: 640px;
-            justify-content: center;
-        }
-        .m5scrll img {
-            padding: 10px;
-            max-width: 640px;
-            height: auto;
-            flex-shrink: 0;
-            object-fit: cover;
-        }
+        .m5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(172, 188, 218);
+    background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);
+}
+
+.m5 h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.m5-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.m5-info {
+    text-align: left;
+    max-width: 400px;
+    padding: 90px;
+}
+
+.m5-info img {
+    height: 100%;
+    width: 100%;
+}
+
+.m5scrll {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    height: auto;
+    max-width: 640px;
+    justify-content: center;
+}
+
+.m5scrll img {
+    padding: 10px;
+    max-width: 640px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.m5 h3 {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
         .rs6-sldr .arrowleft,
         .rs6-sldr .arrowright {
             position: absolute;
@@ -168,6 +190,65 @@
             flex-shrink: 0;
             object-fit: cover;
         }
+        .fun-facts {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .fact {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .fact h3 {
+        color: #333;
+    }
+
+    #generateFactBtn {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    footer {
+        background: rgb(172, 188, 218);
+    background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer div > div {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        footer div > p {
+            color: white;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -203,48 +284,102 @@
 
     <div class="m5">
         <h2>Unleashing Precision and Power: Introducing the BMW M5</h2>
-        <div class="m5scrll">
-            <img src="Foto e projektit/M5/download (1).webp">
-            <img src="Foto e projektit/M5/download (2).webp">
-            <img src="Foto e projektit/M5/download.webp">
-            <img src="Foto e projektit/M5/download (3).webp">
-            <img src="Foto e projektit/M5/download (4).webp">
+        <div class="m5-content">
+            <div class="m5-info">
+                <p>The BMW M5 engine specs were:</p>
+<ul>
+    <li>4.4-liter TwinPower Turbocharged V8 engine</li>
+    <li>Commanding output: 600 horsepower (or 617 horsepower in the Competition variant)</li>
+    <li>Impressive torque: 553 lb-ft</li>
+    <li>Rapid acceleration from 0 to 60 mph in approximately 3.2 seconds</li>
+    <li>Paired with an eight-speed M Steptronic transmission and M xDrive all-wheel-drive system</li>
+    <li>Notable feature: The M5's engine seamlessly blends cutting-edge technology with visceral performance, delivering an exhilarating driving experience that defines the M series legacy.</li>
+</ul>
+            </div>
+            <div class="m5scrll">
+                <img src="Foto e projektit/M5/download (1).webp">
+                <img src="Foto e projektit/M5/download (2).webp">
+                <img src="Foto e projektit/M5/download.webp">
+                <img src="Foto e projektit/M5/download (3).webp">
+                <img src="Foto e projektit/M5/download (4).webp">
+            </div>
+            <div class="m5-info">
+                <img src="Foto e projektit/M5/motorri.webp" alt="motorri">
+            </div>
         </div>
         <h3>
-            The BMW M5 stands as an iconic and high-performance luxury sedan, renowned for its impressive blend of power, precision, and refinement. Boasting a potent twin-turbocharged V8 engine, the M5 delivers exhilarating acceleration and dynamic handling, making it a top contender in the competitive realm of sports sedans. Its sophisticated chassis and adaptive suspension system contribute to an agile driving experience, while the meticulously crafted interior offers a harmonious balance between comfort and sportiness. When comparing the BMW M5 to its competitors, such as the Audi RS6 and the Mercedes-AMG GT63, each car brings its own unique strengths to the table. The RS6 impresses with its quattro all-wheel-drive system and distinctive design, while the GT63 asserts itself as a powerful grand tourer, combining opulent luxury with a robust performance pedigree. As you navigate through the choice between the M5, RS6, and GT63, your decision will likely hinge on your personal preferences in terms of driving dynamics, design aesthetics, and the specific blend of performance and comfort that aligns with your automotive aspirations.</h3>
+            The BMW M5 stands as an iconic and high-performance luxury sedan, renowned for its impressive blend of power, precision, and refinement. Boasting a potent twin-turbocharged V8 engine, the M5 delivers exhilarating acceleration and dynamic handling, making it a top contender in the competitive realm of sports sedans. Its sophisticated chassis and adaptive suspension system contribute to an agile driving experience, while the meticulously crafted interior offers a harmonious balance between comfort and sportiness. When comparing the BMW M5 to its competitors, such as the Audi RS6 and the Mercedes-AMG GT63, each car brings its own unique strengths to the table. The RS6 impresses with its quattro all-wheel-drive system and distinctive design, while the GT63 asserts itself as a powerful grand tourer, combining opulent luxury with a robust performance pedigree. As you navigate through the choice between the M5, RS6, and GT63, your decision will likely hinge on your personal preferences in terms of driving dynamics, design aesthetics, and the specific blend of performance and comfort that aligns with your automotive aspirations.
+        </h3>
     </div>
 
     <div class="rs6">
-    <h2>Thrilling Elegance in Motion: Meet the Audi RS6</h2>
-    <div class="rs6-sldr">
-        <i class="fas fa-arrow-left arrowleft"></i>
-        <img src="Foto e projektit/RS6/1 (1).jpg" class="active">
-        <img src="Foto e projektit/RS6/1 (2).jpg">
-        <img src="Foto e projektit/RS6/1 (3).jpg">
-        <img src="Foto e projektit/RS6/1 (4).jpg">
-        <img src="Foto e projektit/RS6/1 (5).jpg">
-        <img src="Foto e projektit/RS6/1 (6).jpg">
-        <i class="fas fa-arrow-right arrowright"></i>
+        <h2>Thrilling Elegance in Motion: Meet the Audi RS6</h2>
+        <div class="m5-content">
+            <div class="m5-info">
+                <p>The Audi RS6 engine specs include:</p>
+                <ul>
+                    <li>4.0-liter Twin-Turbocharged V8 engine</li>
+                    <li>Powerful output: 591 horsepower</li>
+                    <li>Impressive torque: 590 lb-ft</li>
+                    <li>Accelerates from 0 to 60 mph in just 3.5 seconds</li>
+                    <li>Quattro all-wheel-drive system for exceptional traction</li>
+                    <li>Dynamic performance aided by adaptive air suspension</li>
+                    <li>Distinctive feature: The RS6 embodies a perfect blend of power and luxury, offering a thrilling driving experience with its potent engine while ensuring comfort through its advanced suspension and drivetrain systems.</li>
+                </ul>
+            </div>
+            <div class="rs6-sldr">
+                <i class="fas fa-arrow-left arrowleft"></i>
+                <img src="Foto e projektit/RS6/1 (1).jpg" class="active">
+                <img src="Foto e projektit/RS6/1 (2).jpg">
+                <img src="Foto e projektit/RS6/1 (3).jpg">
+                <img src="Foto e projektit/RS6/1 (4).jpg">
+                <img src="Foto e projektit/RS6/1 (5).jpg">
+                <img src="Foto e projektit/RS6/1 (6).jpg">
+                <i class="fas fa-arrow-right arrowright"></i>
+            </div>
+            <div class="m5-info">
+                <img src="Foto e projektit/RS6/engine.jpg" alt="engine">
+            </div>
+        </div>
+        <h3>The Audi RS6, a formidable entry in the high-performance wagon segment, is a captivating blend of elegance and athleticism. Under the hood, the RS6 packs a punch with a 4.0-liter twin-turbocharged V8 engine, producing a symphony of 591 horsepower and 590 lb-ft of torque. This powerplant, combined with Audi's signature quattro all-wheel-drive system, propels the RS6 from 0 to 60 mph in a mere 3.5 seconds, showcasing its prowess on the road.
+    
+            Beyond its impressive performance, the RS6 doesn't compromise on luxury and comfort. The interior is a masterclass in craftsmanship, featuring premium materials and cutting-edge technology. The Audi Virtual Cockpit infotainment system takes center stage, offering a customizable, high-resolution display that provides essential information at a glance.
+            
+            On the road, the RS6 delivers a refined and controlled driving experience, effortlessly gliding over various terrains. The adaptive air suspension system ensures a smooth ride, and the dynamic steering enhances responsiveness, making it equally enjoyable on winding roads and city streets.
+            
+            The exterior design of the RS6 is a testament to Audi's commitment to blending style with aerodynamics. The sleek lines, bold grille, and RS-specific elements contribute to its head-turning presence. Practicality meets performance with a spacious cargo area, making it a versatile choice for both daily use and long journeys.
+            
+            In summary, the Audi RS6 is a compelling choice for those seeking a high-performance wagon that doesn't compromise on luxury. Its combination of breathtaking speed, refined interior, and versatile design positions it as a standout option in the competitive landscape of sports wagons.</h3>
     </div>
-    <h3>The Audi RS6, a formidable entry in the high-performance wagon segment, is a captivating blend of elegance and athleticism. Under the hood, the RS6 packs a punch with a 4.0-liter twin-turbocharged V8 engine, producing a symphony of 591 horsepower and 590 lb-ft of torque. This powerplant, combined with Audi's signature quattro all-wheel-drive system, propels the RS6 from 0 to 60 mph in a mere 3.5 seconds, showcasing its prowess on the road.
-
-        Beyond its impressive performance, the RS6 doesn't compromise on luxury and comfort. The interior is a masterclass in craftsmanship, featuring premium materials and cutting-edge technology. The Audi Virtual Cockpit infotainment system takes center stage, offering a customizable, high-resolution display that provides essential information at a glance.
-        
-        On the road, the RS6 delivers a refined and controlled driving experience, effortlessly gliding over various terrains. The adaptive air suspension system ensures a smooth ride, and the dynamic steering enhances responsiveness, making it equally enjoyable on winding roads and city streets.
-        
-        The exterior design of the RS6 is a testament to Audi's commitment to blending style with aerodynamics. The sleek lines, bold grille, and RS-specific elements contribute to its head-turning presence. Practicality meets performance with a spacious cargo area, making it a versatile choice for both daily use and long journeys.
-        
-        In summary, the Audi RS6 is a compelling choice for those seeking a high-performance wagon that doesn't compromise on luxury. Its combination of breathtaking speed, refined interior, and versatile design positions it as a standout option in the competitive landscape of sports wagons.</h3>
-</div>
+    
 
 <div class="gt63">
     <h1>Elevating Grandeur: Unveiling the Mercedes-AMG GT63 – The Pinnacle of Performance Among the Trio</h1>
+    <div class="m5-content">
+        <div class="m5-info">
+            <p>The Mercedes-AMG GT63 engine specs were:</p>
+            <ul>
+                <li>Handcrafted 4.0-liter Twin-Turbocharged V8 engine</li>
+                <li>Staggering output: 630 horsepower</li>
+                <li>Impressive torque: 664 lb-ft</li>
+                <li>Rapid acceleration with AMG Performance 4MATIC+ all-wheel-drive system</li>
+                <li>Efficient AMG SPEEDSHIFT MCT 9-speed transmission for quick gear changes</li>
+                <li>Adaptive air suspension system balances comfort and sportiness</li>
+                <li>Dynamic handling features include AMG DYNAMIC SELECT drive modes and active rear-wheel steering</li>
+                <li>Notable feature: The GT63 seamlessly combines the brute force of a high-performance sports car with the refinement expected from a luxury sedan, offering a comprehensive package that redefines grand touring.</li>
+            </ul>
+            
+        </div>
     <div class="gtscrll">
         <img src="Foto e projektit/GT63/391879.jpg">
         <img src="Foto e projektit/GT63/391881.jpg">
         <img src="Foto e projektit/GT63/391882.jpg">
         <img src="Foto e projektit/GT63/391883.jpg">
         <img src="Foto e projektit/GT63/391884.jpg">
+    </div>
+    <div class="m5-info">
+        <img src="Foto e projektit/GT63/engine.jpg">
+    </div>
     </div>
     <h3>
         The Mercedes-AMG GT63, a four-door coupe that blurs the line between luxury and performance, is a tour de force in the realm of grand touring. From the moment you lay eyes on it, the GT63 captivates with its sleek and athletic design, marrying the aggressive styling cues of a sports car with the practicality of a four-door layout. This model isn't just a car; it's a statement.
@@ -262,6 +397,38 @@
         In conclusion, the Mercedes-AMG GT63 is a triumph of engineering and design. It effortlessly combines the brute force of a high-performance sports car with the refinement expected from a luxury sedan. While its rivals may excel in specific areas, the GT63 stands out as a comprehensive package, earning its place as the best among the trio. It's not just a car; it's an experience that redefines what a grand touring vehicle can be.</div>
     
 
+
+        <section class="fun-facts">
+            <h2>Trivia and Fun Facts</h2>
+            <div class="fact">
+                <h3>Did You Know?</h3>
+                <p>The BMW M5's engine is so powerful that it can go from 0 to 100 km/h in just over 3 seconds, making it one of the quickest sedans on the market.</p>
+            </div>
+        
+            <div class="fact">
+                <h3>Fun Fact</h3>
+                <p>The Audi RS6 features a launch control system that optimizes acceleration, delivering an adrenaline-pumping experience every time you hit the gas pedal.</p>
+            </div>
+        
+            <div class="fact">
+                <h3>Trivia</h3>
+                <p>The Mercedes-AMG GT63 holds the record for the fastest lap time by a four-door coupe on the famous Nürburgring Nordschleife circuit.</p>
+            </div>
+        
+            <button id="generateFactBtn">Generate Random Fact</button>
+        </section>
+        
+        <footer>
+            <div>
+                <div>
+                    <a href="index.html">Home</a><br>
+                    <a href="aboutus.html">About Us</a><br>
+                    <a href="log-in.html">Log In</a>
+                </div>
+                <p>Thank you for visiting</p>
+                <p>&copy; 2023 Weistec Engineering. All rights reserved.</p>
+            </div>
+        </footer>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -310,6 +477,10 @@
         
                 showImage(currentImageIndex);
             });
+            document.getElementById('generateFactBtn').addEventListener('click', function () {
+        alert('The Mercedes-AMG GT63 S is not just a high-performance sedan; its a record-breaker. This powerful four-door coupe holds the title for the fastest production four-seater car around the Nürburgring Nordschleife, completing the lap in an impressive time, showcasing its exceptional performance capabilities on one of the worlds most challenging tracks.');
+    });
         </script>
 </body>
+
 </html>
