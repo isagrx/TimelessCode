@@ -7,18 +7,17 @@
     <title>About us!</title>
     <style>
         body {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("Foto e projektit/trinity.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-}
-
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("Foto e projektit/trinity.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
 
         header {
             background-color: white;
@@ -32,14 +31,13 @@
         .font {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: black;
-            
         }
 
-        .foto{
+        .foto {
             width: 150px;
             height: 150px;
         }
-        
+
         button {
             width: 40%;
             height: 40px;
@@ -93,38 +91,80 @@
             text-align: left;
         }
 
+        .button-52 {
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 13px 20px 13px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            color: black;
+        }
+
+        .button-52:after {
+            content: "";
+            background-color: #ffe54c;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
+        }
+
+        .button-52:hover:after {
+            top: 0px;
+            left: 0px;
+        }
+
+        .button-52 p {
+            color: black;
+        }
+
+        @media (min-width: 768px) {
+            .button-52 {
+                padding: 13px 50px 13px;
+            }
+        }
+
         footer {
-    background: white;
-    color: black;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    margin-top: auto;
-    clear: both;
-    position: absolute;
-    bottom: 0;
-}
+            background: white;
+            color: black;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin-top: auto;
+            clear: both;
+            position: relative; /* Change to relative */
+        }
 
-footer div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
+        footer div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-footer a {
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-}
+        footer a {
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+        }
 
-footer p {
-    margin: 5px;
-}
-footer a:hover{
-    text-decoration: underline;
-}
+        footer p {
+            margin: 5px;
+        }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -162,6 +202,8 @@ footer a:hover{
 
             Join us at Weistec Engineering and embark on a journey where every click, scroll, and interaction brings you closer to the heart of automotive innovation. Whether you're a seasoned enthusiast or just beginning your automotive adventure, Weistec Engineering is here to elevate your autoshowcasing experience. Welcome to a world where the road is not just a path; it's a symphony of power, elegance, and unrivaled engineering.</p>
     </div>
+
+    <button class="button-52" role="button"><a href="contactus.html">Contact US!</a></button>
     <footer>
         <div>
             <div>

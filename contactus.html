@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        header {
+            background-color: black;
+            display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<header>
+    <div class="header">
+        <a href="index.html"><img src="Foto e projektit/wlogo.png"></a>
+    </div>
+</header>
+<body>
+    <div class="contact">
+        <form method="post" action="dergoemail.php">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <br>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

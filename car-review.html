@@ -9,255 +9,82 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: white;
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
 
-
-        .hdr button {
-    background-color: rgb(172, 188, 218);
-    color: black;
-    border: 2px solid rgb(172, 188, 218);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: 'Your Cool Font', sans-serif;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-right: 30px;
-}
-
-.hdr button:hover {
-    background-color: #f0f0f0;
-}
         .headeri {
             background: rgb(172, 188, 218);
-    background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);
+            background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);
             color: black;
             border: rgb(172, 188, 218);
             border-style: solid;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             text-align: baseline;
             display: flex;
-	        flex-direction: row;
-	        flex-wrap: nowrap;
-	        justify-content: space-between;
-	        align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
             width: 100%;
+            padding: 10px 20px;
         }
-        .headeri img{
+
+        .headeri img {
             max-width: 150px;
             max-height: 150px;
         }
-        .headeri h1 {
-            color: white;
+
+        .hdr button {
+            background-color: rgb(172, 188, 218);
+            color: black;
+            border: 2px solid rgb(172, 188, 218);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
             font-family: 'Your Cool Font', sans-serif;
-            text-shadow: 0px -1px 70px rgba(0, 0, 0, 0.9), 0px 1px 10px rgba(0, 0, 0, 0.9), 0px 1px 10px rgba(0, 0, 0, 0.9),0px -1px 70px rgba(0, 0, 0, 0.9);
-            padding-left: 50px;
-}
-        .bg {
-            width: 100%;
-            margin: 0; 
-            padding: 0; 
-            object-fit: cover;
-        }
-        .head {
-            max-width: 122px;
-            max-height: 122px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-right: 10px;
         }
 
-        .fillimi {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        .hdr button:hover {
+            background-color: #f0f0f0;
         }
 
         .car-container {
             text-align: center;
-            max-width: 30%;
+            width: 30%;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: inline-block;
         }
+
         .car-container img {
             width: 100%;
             height: auto;
             margin-bottom: 10px;
+            border-radius: 5px;
         }
 
-        .trinity {
+        .m5,
+        .rs6,
+        .gt63 {
+            padding: 30px 0;
             text-align: center;
-            margin-top: 20px;
-        }
-        .m5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: rgb(172, 188, 218);
-    background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);
-}
-
-.m5 h2 {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.m5-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.m5-info {
-    text-align: left;
-    max-width: 400px;
-    padding: 90px;
-}
-
-.m5-info img {
-    height: 100%;
-    width: 100%;
-}
-
-.m5scrll {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-    height: auto;
-    max-width: 640px;
-    justify-content: center;
-}
-
-.m5scrll img {
-    padding: 10px;
-    max-width: 640px;
-    height: auto;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-
-.m5 h3 {
-    text-align: center;
-    padding: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-        .rs6-sldr .arrowleft,
-        .rs6-sldr .arrowright {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 24px;
-            color: white;
-            cursor: pointer;
         }
 
-        .rs6-sldr .arrowleft {
-            left: 10px;
-        }
-
-        .rs6-sldr .arrowright {
-            right: 10px;
-        }
-
-        .rs6-sldr {
-            position: relative;
-            overflow: hidden;
-            max-width: 480px;
-            margin: 0 auto;
-        }
-
-        .rs6-sldr img {
-            width: 100%;
-            height: auto;
-            display: none;
-        }
-
-        .rs6-sldr img.active {
-            display: block;
-        }
-        .rs6 h2{
+        footer {
+            background: rgb(172, 188, 218);
+            background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);
             text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding-bottom: 30px;
-        }
-        .rs6 h3{
-            text-align: center;
-            padding: 30px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .gt63{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: rgb(172,188,218);
-            background: linear-gradient(0deg, rgba(172,188,218,1) 0%);
-            padding-top: 30px;
-        }
-        .gt63 h1{
-            text-align: center;
-            padding-bottom: 30px;
-        }
-        .gt63 h3{
-            text-align: center;
-            padding: 30px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .gtscrll{
-            background-color: #333;
-            overflow: auto;
-            white-space: nowrap;
-            padding: 10px;
-            height: auto;
-            max-width: 640px;
-            justify-content: center;
-        }
-        .gtscrll img {
-            padding: 10px;
-            max-width: 640px;
-            height: auto;
-            flex-shrink: 0;
-            object-fit: cover;
-        }
-        .fun-facts {
-        text-align: center;
-        margin: 40px 0;
-    }
-
-    .fact {
-        background-color: #f5f5f5;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .fact h3 {
-        color: #333;
-    }
-
-    #generateFactBtn {
-        background-color: #007BFF;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 20px;
-    }
-    footer {
-        background: rgb(172, 188, 218);
-    background: linear-gradient(0deg, rgba(172, 188, 218, 1) 0%);            text-align: center;
-            padding: 40px;
-            position: relative;
+            padding: 20px 0;
         }
 
         footer div {
@@ -268,13 +95,11 @@
 
         footer div > div {
             flex-grow: 1;
-            text-align: left;
         }
 
         footer div > p {
             color: white;
             margin: 0;
-            flex-grow: 1;
         }
 
         footer a {
@@ -285,22 +110,22 @@
         footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
     <div class="headeri">
         <h1>Weistec Engineering</h1>
         <img src="Foto e projektit/logo.png">
-        <div class="hdr"><form action="index.html">  
-            <button type="submit">Home</button>
-        </form>
-        <form action="aboutus.html">  
-            <button type="submit">About us</button>
-        </form>
-        <form action="log-in.html">  
+        <div class="hdr">
+            <form action="index.html">  
+                <button type="submit">Home</button>
+            </form>
+            <form action="aboutus.html">  
+                <button type="submit">About us</button>
+            </form>
+            <form action="log-in.html">  
                 <button type="submit">Log-in</button>
-        </form>
+            </form>
         </div>
     </div>
 
@@ -315,7 +140,7 @@
             <img src="Foto e projektit/m5.png" alt="BMW M5">
             <p>BMW M5</p>
             <p>A part of BMW's M series, known for its powerful engine, precise handling, and performance-oriented design.</p>
-</div>
+        </div>
         <div class="car-container">
             <img src="Foto e projektit/gt63 rev.png" alt="Mercedes-AMG GT63">
             <p>Mercedes-AMG GT63</p>
@@ -329,204 +154,71 @@
     </div>
 
     <div class="m5">
-        <h2>Unleashing Precision and Power: Introducing the BMW M5</h2>
-        <div class="m5-content">
-            <div class="m5-info">
-                <p>The BMW M5 engine specs were:</p>
-<ul>
-    <li>4.4-liter TwinPower Turbocharged V8 engine</li>
-    <li>Commanding output: 600 horsepower (or 617 horsepower in the Competition variant)</li>
-    <li>Impressive torque: 553 lb-ft</li>
-    <li>Rapid acceleration from 0 to 60 mph in approximately 3.2 seconds</li>
-    <li>Paired with an eight-speed M Steptronic transmission and M xDrive all-wheel-drive system</li>
-    <li>Notable feature: The M5's engine seamlessly blends cutting-edge technology with visceral performance, delivering an exhilarating driving experience that defines the M series legacy.</li>
-</ul>
-            </div>
-            <div class="m5scrll">
-                <img src="Foto e projektit/M5/download (1).webp">
-                <img src="Foto e projektit/M5/download (2).webp">
-                <img src="Foto e projektit/M5/download.webp">
-                <img src="Foto e projektit/M5/download (3).webp">
-                <img src="Foto e projektit/M5/download (4).webp">
-            </div>
-            <div class="m5-info">
-                <img src="Foto e projektit/M5/motorri.webp" alt="motorri">
-            </div>
+        <h2>BMW M5</h2>
+        <div class="m5scrll">
+            <img src="Foto e projektit/m5s.png" alt="BMW M5">
+            <img src="Foto e projektit/m5b.png" alt="BMW M5">
+            <img src="Foto e projektit/m5c.png" alt="BMW M5">
         </div>
-        <h3>
-            The BMW M5 stands as an iconic and high-performance luxury sedan, renowned for its impressive blend of power, precision, and refinement. Boasting a potent twin-turbocharged V8 engine, the M5 delivers exhilarating acceleration and dynamic handling, making it a top contender in the competitive realm of sports sedans. Its sophisticated chassis and adaptive suspension system contribute to an agile driving experience, while the meticulously crafted interior offers a harmonious balance between comfort and sportiness. When comparing the BMW M5 to its competitors, such as the Audi RS6 and the Mercedes-AMG GT63, each car brings its own unique strengths to the table. The RS6 impresses with its quattro all-wheel-drive system and distinctive design, while the GT63 asserts itself as a powerful grand tourer, combining opulent luxury with a robust performance pedigree. As you navigate through the choice between the M5, RS6, and GT63, your decision will likely hinge on your personal preferences in terms of driving dynamics, design aesthetics, and the specific blend of performance and comfort that aligns with your automotive aspirations.
-        </h3>
+        <div class="m5-content">
+            <h3>Performance</h3>
+            <p>The BMW M5 is powered by a twin-turbocharged V8 engine producing over 600 horsepower, allowing it to accelerate from 0 to 60 mph in under 3.0 seconds.</p>
+            <h3>Handling</h3>
+            <p>Equipped with BMW's advanced M xDrive all-wheel-drive system and adaptive suspension, the M5 offers exceptional handling and agility.</p>
+            <h3>Design</h3>
+            <p>With aggressive styling elements and a luxurious interior, the M5 combines performance with refinement.</p>
+        </div>
     </div>
 
     <div class="rs6">
-        <h2>Thrilling Elegance in Motion: Meet the Audi RS6</h2>
-        <div class="m5-content">
-            <div class="m5-info">
-                <p>The Audi RS6 engine specs include:</p>
-                <ul>
-                    <li>4.0-liter Twin-Turbocharged V8 engine</li>
-                    <li>Powerful output: 591 horsepower</li>
-                    <li>Impressive torque: 590 lb-ft</li>
-                    <li>Accelerates from 0 to 60 mph in just 3.5 seconds</li>
-                    <li>Quattro all-wheel-drive system for exceptional traction</li>
-                    <li>Dynamic performance aided by adaptive air suspension</li>
-                    <li>Distinctive feature: The RS6 embodies a perfect blend of power and luxury, offering a thrilling driving experience with its potent engine while ensuring comfort through its advanced suspension and drivetrain systems.</li>
-                </ul>
-            </div>
-            <div class="rs6-sldr">
-                <i class="fas fa-arrow-left arrowleft"></i>
-                <img src="Foto e projektit/RS6/1 (1).jpg" class="active">
-                <img src="Foto e projektit/RS6/1 (2).jpg">
-                <img src="Foto e projektit/RS6/1 (3).jpg">
-                <img src="Foto e projektit/RS6/1 (4).jpg">
-                <img src="Foto e projektit/RS6/1 (5).jpg">
-                <img src="Foto e projektit/RS6/1 (6).jpg">
-                <i class="fas fa-arrow-right arrowright"></i>
-            </div>
-            <div class="m5-info">
-                <img src="Foto e projektit/RS6/engine.jpg" alt="engine">
-            </div>
+        <h2>Audi RS6</h2>
+        <div class="rs6-sldr">
+            <img src="Foto e projektit/rs6frnt.png" alt="Audi RS6">
+            <img src="Foto e projektit/rs6bk.png" alt="Audi RS6">
+            <img src="Foto e projektit/rs6int.png" alt="Audi RS6">
         </div>
-        <h3>The Audi RS6, a formidable entry in the high-performance wagon segment, is a captivating blend of elegance and athleticism. Under the hood, the RS6 packs a punch with a 4.0-liter twin-turbocharged V8 engine, producing a symphony of 591 horsepower and 590 lb-ft of torque. This powerplant, combined with Audi's signature quattro all-wheel-drive system, propels the RS6 from 0 to 60 mph in a mere 3.5 seconds, showcasing its prowess on the road.
-    
-            Beyond its impressive performance, the RS6 doesn't compromise on luxury and comfort. The interior is a masterclass in craftsmanship, featuring premium materials and cutting-edge technology. The Audi Virtual Cockpit infotainment system takes center stage, offering a customizable, high-resolution display that provides essential information at a glance.
-            
-            On the road, the RS6 delivers a refined and controlled driving experience, effortlessly gliding over various terrains. The adaptive air suspension system ensures a smooth ride, and the dynamic steering enhances responsiveness, making it equally enjoyable on winding roads and city streets.
-            
-            The exterior design of the RS6 is a testament to Audi's commitment to blending style with aerodynamics. The sleek lines, bold grille, and RS-specific elements contribute to its head-turning presence. Practicality meets performance with a spacious cargo area, making it a versatile choice for both daily use and long journeys.
-            
-            In summary, the Audi RS6 is a compelling choice for those seeking a high-performance wagon that doesn't compromise on luxury. Its combination of breathtaking speed, refined interior, and versatile design positions it as a standout option in the competitive landscape of sports wagons.</h3>
-    </div>
-    
-
-<div class="gt63">
-    <h1>Elevating Grandeur: Unveiling the Mercedes-AMG GT63 – The Pinnacle of Performance Among the Trio</h1>
-    <div class="m5-content">
-        <div class="m5-info">
-            <p>The Mercedes-AMG GT63 engine specs were:</p>
-            <ul>
-                <li>Handcrafted 4.0-liter Twin-Turbocharged V8 engine</li>
-                <li>Staggering output: 630 horsepower</li>
-                <li>Impressive torque: 664 lb-ft</li>
-                <li>Rapid acceleration with AMG Performance 4MATIC+ all-wheel-drive system</li>
-                <li>Efficient AMG SPEEDSHIFT MCT 9-speed transmission for quick gear changes</li>
-                <li>Adaptive air suspension system balances comfort and sportiness</li>
-                <li>Dynamic handling features include AMG DYNAMIC SELECT drive modes and active rear-wheel steering</li>
-                <li>Notable feature: The GT63 seamlessly combines the brute force of a high-performance sports car with the refinement expected from a luxury sedan, offering a comprehensive package that redefines grand touring.</li>
-            </ul>
-            
+        <div class="rs6-content">
+            <h3>Performance</h3>
+            <p>The Audi RS6 is powered by a twin-turbocharged V8 engine delivering impressive horsepower and torque, resulting in exhilarating performance.</p>
+            <h3>Handling</h3>
+            <p>Featuring Audi's quattro all-wheel-drive system and dynamic air suspension, the RS6 offers superb traction and precise handling.</p>
+            <h3>Design</h3>
+            <p>With its sleek and sporty exterior design, luxurious interior appointments, and cutting-edge technology, the RS6 embodies Audi's performance and craftsmanship.</p>
         </div>
-    <div class="gtscrll">
-        <img src="Foto e projektit/GT63/391879.jpg">
-        <img src="Foto e projektit/GT63/391881.jpg">
-        <img src="Foto e projektit/GT63/391882.jpg">
-        <img src="Foto e projektit/GT63/391883.jpg">
-        <img src="Foto e projektit/GT63/391884.jpg">
     </div>
-    <div class="m5-info">
-        <img src="Foto e projektit/GT63/engine.jpg">
+
+    <div class="gt63">
+        <h2>Mercedes-AMG GT63</h2>
+        <div class="gtscrll">
+            <img src="Foto e projektit/gt63r.png" alt="Mercedes-AMG GT63">
+            <img src="Foto e projektit/gt63bk.png" alt="Mercedes-AMG GT63">
+            <img src="Foto e projektit/gt63int.png" alt="Mercedes-AMG GT63">
+        </div>
+        <div class="gt63-content">
+            <h3>Performance</h3>
+            <p>The Mercedes-AMG GT63 is powered by a handcrafted AMG 4.0-liter V8 Biturbo engine, delivering exhilarating performance with its impressive power output and acceleration.</p>
+            <h3>Handling</h3>
+            <p>Equipped with AMG Performance 4MATIC+ all-wheel drive and dynamic suspension systems, the GT63 offers exceptional agility and stability in various driving conditions.</p>
+            <h3>Design</h3>
+            <p>With its striking exterior design, luxurious interior features, and advanced technology, the GT63 exemplifies the pinnacle of Mercedes-AMG performance and craftsmanship.</p>
+        </div>
     </div>
-    </div>
-    <h3>
-        The Mercedes-AMG GT63, a four-door coupe that blurs the line between luxury and performance, is a tour de force in the realm of grand touring. From the moment you lay eyes on it, the GT63 captivates with its sleek and athletic design, marrying the aggressive styling cues of a sports car with the practicality of a four-door layout. This model isn't just a car; it's a statement.
 
-        Under the hood, the GT63 is a powerhouse. The handcrafted 4.0-liter twin-turbocharged V8 engine, synonymous with AMG's commitment to performance, generates a staggering 630 horsepower and 664 lb-ft of torque. The symphony of the exhaust note as you push the accelerator is a testament to the engineering prowess behind this luxury sports sedan.
-        
-        Step inside, and you're greeted by an opulent interior that exudes sophistication. High-quality materials, meticulous craftsmanship, and cutting-edge technology converge to create a cockpit that seamlessly blends comfort with a driver-centric focus. The dual 12.3-inch displays of the MBUX infotainment system provide a futuristic and intuitive interface, offering everything from navigation to ambient lighting control at your fingertips.
-        
-        On the road, the GT63 is a revelation. The AMG Performance 4MATIC+ all-wheel-drive system ensures optimal traction, while the AMG SPEEDSHIFT MCT 9-speed transmission allows for lightning-fast gear changes. The adaptive air suspension system strikes an excellent balance between comfort and sportiness, making long drives a pleasure and spirited drives exhilarating.
-        
-        Handling is precise and responsive, thanks to features like the AMG DYNAMIC SELECT drive modes, active rear-wheel steering, and an electronic limited-slip rear differential. Whether navigating tight city streets or opening up on the highway, the GT63 feels composed and in control.
-        
-        Practicality is not sacrificed in the pursuit of performance. The GT63 offers a spacious and well-appointed interior, with ample legroom and a generous cargo area. It's a true grand tourer, capable of eating up miles effortlessly while providing a cocoon of luxury for both driver and passengers.
-        
-        In conclusion, the Mercedes-AMG GT63 is a triumph of engineering and design. It effortlessly combines the brute force of a high-performance sports car with the refinement expected from a luxury sedan. While its rivals may excel in specific areas, the GT63 stands out as a comprehensive package, earning its place as the best among the trio. It's not just a car; it's an experience that redefines what a grand touring vehicle can be.</div>
-    
-
-
-        <section class="fun-facts">
-            <h2>Trivia and Fun Facts</h2>
-            <div class="fact">
-                <h3>Did You Know?</h3>
-                <p>The BMW M5's engine is so powerful that it can go from 0 to 100 km/h in just over 3 seconds, making it one of the quickest sedans on the market.</p>
-            </div>
-        
-            <div class="fact">
-                <h3>Fun Fact</h3>
-                <p>The Audi RS6 features a launch control system that optimizes acceleration, delivering an adrenaline-pumping experience every time you hit the gas pedal.</p>
-            </div>
-        
-            <div class="fact">
-                <h3>Trivia</h3>
-                <p>The Mercedes-AMG GT63 holds the record for the fastest lap time by a four-door coupe on the famous Nürburgring Nordschleife circuit.</p>
-            </div>
-        
-            <button id="generateFactBtn">Generate Random Fact</button>
-        </section>
-        
-        <footer>
+    <footer>
+        <div>
             <div>
-                <div>
-                    <a href="index.html">Home</a><br>
-                    <a href="aboutus.html">About Us</a><br>
-                    <a href="log-in.html">Log In</a>
-                </div>
-                <p>Thank you for visiting</p>
-                <p>&copy; 2023 Weistec Engineering. All rights reserved.</p>
+                <p>&copy; 2024 Weistec Engineering. All rights reserved.</p>
+                <p>Contact us: <a href="mailto:info@weistec.com">info@weistec.com</a></p>
             </div>
-        </footer>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const slider = document.querySelector('.rs6-sldr');
-                const images = [
-                    "Foto e projektit/RS6/1(1).jpg",
-                    "Foto e projektit/RS6/2(2).jpg",
-                    "Foto e projektit/RS6/1(3).jpg",
-                    "Foto e projektit/RS6/2(4).jpg",
-                    "Foto e projektit/RS6/1(5).jpg",
-                    "Foto e projektit/RS6/1(6).jpg"
-                ];
-                let currentImageIndex = 0;
-        
-                function showImage(index) {
-                    const allImages = slider.querySelectorAll('img');
-                    allImages.forEach((img, i) => {
-                        if (i === index) {
-                            img.classList.add('active');
-                        } else {
-                            img.classList.remove('active');
-                        }
-                    });
-                }
-        
-                function updateSlider(direction) {
-                    if (direction === 'left') {
-                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-                    } else if (direction === 'right') {
-                        currentImageIndex = (currentImageIndex + 1) % images.length;
-                    }
-        
-                    showImage(currentImageIndex);
-                }
-        
-                const arrLeft = document.querySelector('.arrowleft');
-                const arrRight = document.querySelector('.arrowright');
-        
-                arrLeft.addEventListener('click', () => {
-                    updateSlider('left');
-                });
-        
-                arrRight.addEventListener('click', () => {
-                    updateSlider('right');
-                });
-        
-                showImage(currentImageIndex);
-            });
-            document.getElementById('generateFactBtn').addEventListener('click', function () {
-        alert('The Mercedes-AMG GT63 S is not just a high-performance sedan; its a record-breaker. This powerful four-door coupe holds the title for the fastest production four-seater car around the Nürburgring Nordschleife, completing the lap in an impressive time, showcasing its exceptional performance capabilities on one of the worlds most challenging tracks.');
-    });
-        </script>
+            <div>
+                <p>Follow us:</p>
+                <div>
+                    <a href="https://www.facebook.com/weistec"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/weistec"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/weistec"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
