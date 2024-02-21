@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Validimi i passwordit
+        // Password strength validation (at least 8 characters including one uppercase, one lowercase, one number, and one special character)
         if (!validatePassword(password)) {
             alert('Please enter a password with at least 8 characters including one uppercase letter, one lowercase letter, one number, and one special character');
             return;
