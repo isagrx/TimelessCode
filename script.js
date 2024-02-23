@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('.login form');
 
     signupForm.addEventListener('submit', function(event) {
-        event.preventDefault();
         const name = this.elements['txt'].value.trim();
         const email = this.elements['email'].value.trim();
         const password = this.elements['pswd'].value.trim();
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Password strength validation (at least 8 characters including one uppercase, one lowercase, one number, and one special character)
+        // Validimi i passwordit
         if (!validatePassword(password)) {
             alert('Please enter a password with at least 8 characters including one uppercase letter, one lowercase letter, one number, and one special character');
             return;
@@ -30,17 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     loginForm.addEventListener('submit', function(event) {
-        event.preventDefault();
+        
         const email = this.elements['emaill'].value.trim();
         const password = this.elements['pswdd'].value.trim();
 
         if (email === '' || password === '') {
-            alert('Please fill in all fields');
+            alert('Ju lutem mbushni formen');
             return;
         }
 
         if (!validateEmail(email)) {
-            alert('Please enter a valid email address');
+            alert('Ju lutem jepni nje email reale');
             return;
         }
 

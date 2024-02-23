@@ -7,18 +7,20 @@
     <title>About us!</title>
     <style>
         body {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("Foto e projektit/trinity.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-}
-
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("Foto e projektit/trinity.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
 
         header {
             background-color: white;
@@ -32,14 +34,13 @@
         .font {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: black;
-            
         }
 
-        .foto{
+        .foto {
             width: 150px;
             height: 150px;
         }
-        
+
         button {
             width: 40%;
             height: 40px;
@@ -65,12 +66,13 @@
             height: 150px;
         }
 
-        .trupi {
+        main {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 100px;
+            margin: 20px; /* Adjusted margin for better responsiveness */
             font-size: medium;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: white;
@@ -78,7 +80,7 @@
             text-align: left;
         }
 
-        .trupi p {
+        main p {
             font-size: medium;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: white;
@@ -86,45 +88,85 @@
             text-align: left;
         }
 
-        .trupi ol {
+        main ol {
             color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-shadow: 2px 2px 5px grey;
             text-align: left;
+        }
+
+        .button-52 {
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 13px 20px 13px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            color: black;
+            margin: 20px;
+        }
+
+        .button-52:after {
+            content: "";
+            background-color: #ffe54c;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
+        }
+
+        .button-52:hover:after {
+            top: 0px;
+            left: 0px;
+        }
+
+        .button-52 p {
+            color: black;
+        }
+
+        @media (min-width: 768px) {
+            .button-52 {
+                padding: 13px 50px 13px;
+            }
         }
 
         footer {
-    background: white;
-    color: black;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    margin-top: auto;
-    clear: both;
-    position: absolute;
-    bottom: 0;
-}
+            background: white;
+            color: black;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
 
-footer div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
+        footer div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-footer a {
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-}
+        footer a {
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+        }
 
-footer p {
-    margin: 5px;
-}
-footer a:hover{
-    text-decoration: underline;
-}
+        footer p {
+            margin: 5px;
+        }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -134,34 +176,36 @@ footer a:hover{
         <a href="index.html"><img src="Foto e projektit/logo.png" alt="Weistec Engineering" class="foto"></a>
         <button class="font"><a href="log-in.html" class="font">Log in</a></button>
     </header>
-    <div class="trupi">
+    <main>
         <p>At Weistec Engineering, we believe that every automotive enthusiast deserves a platform that not only showcases exceptional vehicles but also fosters a community bound by a shared passion for automotive excellence. Established with the vision to redefine the way we experience and appreciate automobiles, Weistec Engineering is not just an autoshowcasing site; it's a dynamic space where innovation, design, and community converge.<br><br><br>
 
-            Our Story:
-            Founded by a team of dedicated automotive enthusiasts, Weistec Engineering was born out of a shared love for exceptional vehicles and a desire to create a space where enthusiasts could connect, explore, and celebrate the automotive world. With a commitment to curating an unparalleled collection of automotive masterpieces, we set out to redefine the autoshowcasing experience.
-            <br><br><br>
-            What Sets Us Apart:
-            At Weistec Engineering, we are more than just a showcase; we are a community-driven platform that puts the power in the hands of enthusiasts. Our commitment to excellence extends beyond the vehicles themselves – it encompasses the entire experience. From classic icons to cutting-edge innovations, we meticulously curate a collection that represents the epitome of automotive design and engineering.
-            <br><br><br>
-            Our Mission:
-            Our mission is simple – to provide a platform where automotive enthusiasts of all kinds can come together to explore, engage, and be inspired. We aim to be more than just a website; we aspire to be a hub for knowledge, discussion, and celebration of all things automotive.
-            <br><br><br>
-            Why Choose Weistec Engineering:
+        Our Story:
+        Founded by a team of dedicated automotive enthusiasts, Weistec Engineering was born out of a shared love for exceptional vehicles and a desire to create a space where enthusiasts could connect, explore, and celebrate the automotive world. With a commitment to curating an unparalleled collection of automotive masterpieces, we set out to redefine the autoshowcasing experience.
+        <br><br><br>
+        What Sets Us Apart:
+        At Weistec Engineering, we are more than just a showcase; we are a community-driven platform that puts the power in the hands of enthusiasts. Our commitment to excellence extends beyond the vehicles themselves – it encompasses the entire experience. From classic icons to cutting-edge innovations, we meticulously curate a collection that represents the epitome of automotive design and engineering.
+        <br><br><br>
+        Our Mission:
+        Our mission is simple – to provide a platform where automotive enthusiasts of all kinds can come together to explore, engage, and be inspired. We aim to be more than just a website; we aspire to be a hub for knowledge, discussion, and celebration of all things automotive.
+        <br><br><br>
+        Why Choose Weistec Engineering:
 
-            <li>
-                <ol>Curated Excellence: Our collection features a carefully curated selection of vehicles that represent the pinnacle of automotive design and engineering.</ol>
+        <li>
+            <ol>Curated Excellence: Our collection features a carefully curated selection of vehicles that represent the pinnacle of automotive design and engineering.</ol>
 
-                <ol>Community Connection: Join a vibrant community of automotive enthusiasts. Share your passion, insights, and experiences with like-minded individuals from around the world.</ol>
+            <ol>Community Connection: Join a vibrant community of automotive enthusiasts. Share your passion, insights, and experiences with like-minded individuals from around the world.</ol>
 
-                <ol>Personalized Experience: Create your automotive profile, build wishlists, and receive tailored recommendations based on your preferences. Weistec Engineering is designed to be as unique as your automotive taste.</ol>
+            <ol>Personalized Experience: Create your automotive profile, build wishlists, and receive tailored recommendations based on your preferences. Weistec Engineering is designed to be as unique as your automotive taste.</ol>
 
-                <ol>Industry Insights: Stay ahead of the curve with insider updates on the latest industry trends, technological advancements, and exclusive releases.</ol>
+            <ol>Industry Insights: Stay ahead of the curve with insider updates on the latest industry trends, technological advancements, and exclusive releases.</ol>
 
-                <ol>Event Engagements: Receive invitations to exclusive automotive events, showcases, and experiences. Immerse yourself in the world of high-performance automobiles.</ol>
-            </li>
+            <ol>Event Engagements: Receive invitations to exclusive automotive events, showcases, and experiences. Immerse yourself in the world of high-performance automobiles.</ol>
+        </li>
 
-            Join us at Weistec Engineering and embark on a journey where every click, scroll, and interaction brings you closer to the heart of automotive innovation. Whether you're a seasoned enthusiast or just beginning your automotive adventure, Weistec Engineering is here to elevate your autoshowcasing experience. Welcome to a world where the road is not just a path; it's a symphony of power, elegance, and unrivaled engineering.</p>
-    </div>
+        Join us at Weistec Engineering and embark on a journey where every click, scroll, and interaction brings you closer to the heart of automotive innovation. Whether you're a seasoned enthusiast or just beginning your automotive adventure, Weistec Engineering is here to elevate your autoshowcasing experience. Welcome to a world where the road is not just a path; it's a symphony of power, elegance, and unrivaled engineering.</p>
+    </main>
+
+    <button class="button-52" role="button"><a href="contactus.html">Contact US!</a></button>
     <footer>
         <div>
             <div>
