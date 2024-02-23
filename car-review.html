@@ -477,8 +477,11 @@
         </footer>
 
         <script>
+            // Vendosja e ngjarjes qe te filloje permbajtja e DOM
             document.addEventListener("DOMContentLoaded", function () {
+                // Zgjedhja e slider-it nga klasa
                 const slider = document.querySelector('.rs6-sldr');
+                // Lista e imazheve per slider
                 const images = [
                     "Foto e projektit/RS6/1(1).jpg",
                     "Foto e projektit/RS6/2(2).jpg",
@@ -487,47 +490,82 @@
                     "Foto e projektit/RS6/1(5).jpg",
                     "Foto e projektit/RS6/1(6).jpg"
                 ];
+                // Indeksi aktual i imazhit ne slider
                 let currentImageIndex = 0;
         
+                // Funksioni per t'u shfaqur imazhin
                 function showImage(index) {
+                    // Zgjedhja e te gjitha imazheve brenda slider-it
                     const allImages = slider.querySelectorAll('img');
+                    // Per secilin imazh
                     allImages.forEach((img, i) => {
+                        // Nese indeksi eshte i njejti me indeksin aktual
                         if (i === index) {
+                            // Shto klasen 'active'
                             img.classList.add('active');
                         } else {
+                            // Fshi klasen 'active'
                             img.classList.remove('active');
                         }
                     });
                 }
         
+                // Funksioni per te perditesuar slider-in
                 function updateSlider(direction) {
+                    // Nese drejtimi eshte majtas
                     if (direction === 'left') {
+                        // Perditeso indeksin ne menyre qe te shkarkohet imazhi i meparshem
                         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    // Nese drejtimi eshte djathtas
                     } else if (direction === 'right') {
+                        // Perditeso indeksin ne menyre qe te shkarkohet imazhi pasues
                         currentImageIndex = (currentImageIndex + 1) % images.length;
                     }
         
+                    // Shfaq imazhin aktual
                     showImage(currentImageIndex);
                 }
         
+                // Zgjedhja e butonit te majte te slider-it
                 const arrLeft = document.querySelector('.arrowleft');
+                // Zgjedhja e butonit te djathte te slider-it
                 const arrRight = document.querySelector('.arrowright');
         
+                // Vendosja e degjuesit te ngjarjes per butonin e majte
                 arrLeft.addEventListener('click', () => {
+                    // Perditesimi i slider-it ne drejtimin majtas
                     updateSlider('left');
                 });
         
+                // Vendosja e degjuesit te ngjarjes per butonin e djathte
                 arrRight.addEventListener('click', () => {
+                    // Perditesimi i slider-it ne drejtimin djathtas
                     updateSlider('right');
                 });
         
+                // Shfaq imazhin aktual ne fillim
                 showImage(currentImageIndex);
             });
-            document.getElementById('generateFactBtn').addEventListener('click', function () {
-        alert('The Mercedes-AMG GT63 S is not just a high-performance sedan; its a record-breaker. This powerful four-door coupe holds the title for the fastest production four-seater car around the Nürburgring Nordschleife, completing the lap in an impressive time, showcasing its exceptional performance capabilities on one of the worlds most challenging tracks.');
         
+             // Lista e fakteve të ndryshme
+    const facts = [
+        "The BMW M5, known for its performance prowess, features a potent V8 engine coupled with advanced M xDrive technology for superior traction and handling.",
+        "Mercedes-AMG GT63 S, a high-performance four-door coupe, boasts a handcrafted AMG 4.0-liter V8 biturbo engine that propels it from 0 to 60 mph in under 3.0 seconds. ",
+        "Audi RS6 Avant combines practicality with exhilarating performance, featuring a twin-turbocharged V8 engine and Audi's legendary quattro all-wheel-drive system.",
+        "The BMW M5 offers various driving modes, including Comfort, Sport, and Track, allowing drivers to customize their driving experience according to their preferences and road conditions.",
+        "Mercedes-AMG GT63 S features an aerodynamically optimized exterior design, including an active rear spoiler, contributing to its high-speed stability and cornering agility.",
+        "Audi RS6 Avant offers ample cargo space combined with luxurious interior appointments, making it a versatile yet upscale choice for enthusiasts seeking both performance and practicality. "
+    ];
+
+    // Vendosja e dëgjuesit të ngjarjes për butonin për të gjeneruar faktin
+    document.getElementById('generateFactBtn').addEventListener('click', function () {
+        // Zgjedh një fakt rastësisht nga lista e fakteve
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        // Paraqitja e faktit të zgjedhur rastësisht
+        alert(randomFact);
     });
         </script>
+        
 </body>
 
 </html>
